@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoLux | Shop</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #000; color: #fff; }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      letter-spacing: 3px;
+      font-size: 24px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    nav a:hover { opacity: 1; }
+
+    .products {
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .product {
+      border: 1px solid #222;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .product:hover { transform: translateY(-5px); }
+
+    .product-images {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .product-images img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: none; /* hide all images */
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .product-images img.active {
+      display: block;
+    }
+
+    .product h3 { margin-bottom: 10px; }
+
+    .product p {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: block;
+      margin-bottom: 10px;
+      padding: 12px;
+      border: 1px solid #fff;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+
+    .btn:hover { background: #fff; color: #000; }
+
+    footer {
+      border-top: 1px solid #222;
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>AUTOLUX</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+	 <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="products">
+
+  <!-- PRODUCT 1: Car Gap Filler -->
+  <div class="product">
+    <div class="product-images">
+      <img src="gap-filler-1.jpg" alt="Car Gap Filler 1" class="active">
+      <img src="gap-filler-2.jpg" alt="Car Gap Filler 2">
+      <img src="gap-filler-3.jpg" alt="Car Gap Filler 3">
+    </div>
+    <h3>Car bkuetooth Adapter</h3>
+    <p>Hands-free Car Kit with FM Transmitter & QC 3.0 Charger.</p>
+    <div class="price">R349</div>
+    <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20the%20Car%20Bluetooth%20adapter"
+  class="btn">
+  BUY NOW
+</a>
+
+  </div>
+
+  <!-- PRODUCT 2: Wireless Car Charger -->
+  <div class="product">
+    <div class="product-images">
+      <img src="wireless-charger-1.jpg" alt="Wireless Charger 1" class="active">
+      <img src="wireless-charger-2.jpg" alt="Wireless Charger 2">
+      <img src="wireless-charger-3.jpg" alt="Wireless Charger 3">
+    </div>
+    <h3>Wireless Car Charger</h3>
+    <p>Hands-free fast charging while driving.</p>
+    <div class="price">R499</div>
+    <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20the%20Wireless%20car%20charger"
+  class="btn">
+  BUY NOW
+  
+</a>
+
+  </div>
+
+  <!-- PRODUCT 3: Luxury Air Freshener -->
+  <div class="product">
+    <div class="product-images">
+      <img src="air-freshener-1.jpg" alt="Air Freshener 1" class="active">
+      <img src="air-freshener-2.jpg" alt="Air Freshener 2">
+      <img src="air-freshener-3.jpg" alt="Air Freshener 3">
+    </div>
+    <h3>Dash cam</h3>
+    <p>C309 Dash Cam Clear Triple Lens with Parking Mode.</p>
+    <div class="price">R599</div>
+   <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20A%20Dash%20Camera"
+  class="btn">
+  BUY NOW
+</a>
+
+  </div>
+
+  <!-- PRODUCT 4: Car Seat Organiser -->
+  <div class="product">
+    <div class="product-images">
+      <img src="car-organiser-1.jpg" alt="Car Organiser 1" class="active">
+      <img src="car-organiser-2.jpg" alt="Car Organiser 2">
+      <img src="car-organiser-3.jpg" alt="Car Organiser 3">
+    </div>
+    <h3>Car Seat Organiser</h3>
+    <p>Keep your car neat and clutter-free.</p>
+    <div class="price">R349</div>
+    <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20the%20car%20seat%20Organiser"
+  class="btn">
+  BUY NOW
+</a>
+
+ </div>
+
+  <!-- PRODUCT 5: "Interior LED  -->
+  <div class="product">
+    <div class="product-images">
+      <img src="Interior LED 1.jpg" alt="Interior LED 1"  class="active">
+      <img src="Interior LED 2.jpg" alt="Interior LED 2">
+      <img src="Interior LED 3.jpg" alt="Interior LED 3">
+    </div>
+    <h3>LED Light Kit for Car Interiors, 4 Units</h3>
+    <p>The best premium Interior white light on the market.</p>
+    <div class="price">R569</div>
+    <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20the%20LED%20Light%20Kit"
+  class="btn">
+  BUY NOW
+</a>
+
+ </div>
+
+  <!-- PRODUCT 6: Automotive Atmosphere Decorative Lamp Led Interior -->
+  <div class="product">
+    <div class="product-images">
+       <img src="Automotive Atmosphere 1.jpg" alt="Automotive Atmosphere 1"  class="active">
+      <img src="Automotive Atmosphere 2.jpg" alt="Automotive Atmosphere 2">
+      <img src="Automotive Atmosphere 3.jpg" alt="Automotive Atmosphere 3">
+    </div>
+    <h3>Automotive Atmosphere Decorative Lamp Led Interior</h3>
+    <p>USB control, mobile app-enabled, foot-mounted LED light strip with infrared.</p>
+    <div class="price">R649</div>
+    <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20the%20aAutomotive%20Atmosphere%20Decorative%20Lamp%20Led%20"
+  class="btn">
+  BUY NOW
+</a>
+
+ </div>
+
+  <!-- PRODUCT 7: Shield - Car Care Value Kit -->
+  <div class="product">
+    <div class="product-images">
+      <img src="Shield - Car Care Value Kit 1.jpg" alt="Shield - Car Care Value Kit 1" class="active">
+      <img src="Shield - Car Care Value Kit 2.jpg" alt="Shield - Car Care Value Kit 2">
+      <img src="Shield - Car Care Value Kit 3.jpg" alt="Shield - Car Care Value Kit 3">
+    </div>
+    <h3>Shield - Car Care Value Kit</h3>
+    <p>Shield car care package. All in one</p>
+    <div class="price">R349</div>
+    <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20the%20shield%20car%20care%20package"
+  class="btn">
+  BUY NOW
+</a>
+
+ </div>
+
+  <!-- PRODUCT 8: Microfiber Cleaning Cloths For Car Pack of 4 -->
+  <div class="product">
+    <div class="product-images">
+      <img src="Microfiber-1.jpg" alt="Microfiber-1" class="active">
+      <img src="Microfiber-2.jpg" alt="Microfiber-2">
+      <img src="Microfiber-3.jpg" alt="Microfiber-3">
+    </div>
+    <h3>Microfiber Cleaning Cloths</h3>
+    <p>Microfiber Dust free Cleaning Cloths For your Car. Pack of 4.</p>
+    <div class="price">R219</div>
+    <a 
+  href="https://wa.me/27695009374?text=Hi%20AutoLux%2C%20I%20want%20to%20buy%20the%20Microfiber%20cleaning%20Cloths"
+  class="btn">
+  BUY NOW
+</a>
+
+</section>
+
+<footer>
+  © 2026 AutoLux. All rights reserved.
+</footer>
+
+<script>
+  const products = document.querySelectorAll('.product');
+  products.forEach(product => {
+    const images = product.querySelectorAll('.product-images img');
+    let index = 0;
+    if(images.length > 1){
+      setInterval(() => {
+        images[index].classList.remove('active');
+        index = (index + 1) % images.length;
+        images[index].classList.add('active');
+      }, 3000); // changes image every 3 seconds
+    }
+  });
+</script>
+
+</body>
+</html>
